@@ -1,0 +1,40 @@
+{
+  "name": "Tapetes de Yoga Mayoreo",
+  "domain": "tapetesdeyogamayoreo.com.mx",
+  "canonical": "https://www.tapetesdeyogamayoreo.com.mx/",
+  "gsc_property": "sc-domain:tapetesdeyogamayoreo.com.mx",
+  "hosting": "cloudflare-pages",
+  "deploy_dir": "/",
+  "tracking": {
+    "gtm": "GTM-T8RZ82BZ",
+    "ga4_measurement_id": "G-K58C25NG66",
+    "ga4_property_id": "562300219",
+    "ga4_stream_id": "16266398432",
+    "clarity": "z82lwfxia0"
+  },
+  "market": {
+    "country": "Mexico",
+    "language": "Spanish"
+  },
+  "business": "YESH MARKET (CDMX)",
+  "product": "Tapetes de yoga de espuma EVA al mayoreo, directo de fábrica (grosores 4–12 mm, personalización con logo desde 150 piezas)",
+  "audience": [
+    "estudios de yoga y pilates",
+    "gimnasios",
+    "boxes de crossfit",
+    "distribuidores deportivos",
+    "agencias de artículos promocionales"
+  ],
+  "primary_keywords": [
+    "tapetes de yoga mayoreo",
+    "tapete de yoga mayoreo",
+    "tapetes de yoga al por mayor",
+    "mat de yoga mayoreo",
+    "tapetes de yoga personalizados con logo",
+    "fabricante de tapetes de yoga mexico",
+    "tapete de yoga eva",
+    "colchoneta de yoga mayoreo"
+  ],
+  "conversion": "contacto por WhatsApp y formulario de cotización",
+  "pages": "index.html (landing única), privacidad.html, terminos.html, paleta-de-marca.html (interna, no indexar)"
+}
