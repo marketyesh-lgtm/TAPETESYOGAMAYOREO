@@ -17,24 +17,42 @@
     "language": "Spanish"
   },
   "business": "YESH MARKET (CDMX)",
-  "product": "Tapetes de yoga de espuma EVA al mayoreo, directo de fábrica (grosores 4–12 mm, personalización con logo desde 150 piezas)",
+  "product": "Tapetes de yoga de espuma EVA de 150 × 60 cm al mayoreo, directo de fábrica (4 mm en existencia; 6, 8 y 10 mm; incluye bolsa; desde $129 + IVA; sin logo desde 15 piezas en CDMX y 30 foráneo; con logo desde 50 piezas)",
   "audience": [
     "estudios de yoga y pilates",
     "gimnasios",
-    "boxes de crossfit",
+    "empresas: eventos, bienestar y regalos corporativos",
+    "agencias de artículos promocionales",
     "distribuidores deportivos",
-    "agencias de artículos promocionales"
+    "boxes de crossfit"
   ],
   "primary_keywords": [
     "tapetes de yoga mayoreo",
-    "tapete de yoga mayoreo",
-    "tapetes de yoga al por mayor",
-    "mat de yoga mayoreo",
-    "tapetes de yoga personalizados con logo",
-    "fabricante de tapetes de yoga mexico",
+    "tapete yoga mayoreo",
+    "tapetes de yoga personalizados",
+    "tapetes de yoga con logo",
+    "fabricantes de tapetes de yoga en méxico",
+    "mats de yoga por mayor",
+    "tapetes de pilates mayoreo",
     "tapete de yoga eva",
-    "colchoneta de yoga mayoreo"
+    "tapetes de yoga al por mayor"
   ],
   "conversion": "contacto por WhatsApp y formulario de cotización",
-  "pages": "index.html (landing única), privacidad.html, terminos.html, paleta-de-marca.html (interna, no indexar)"
+  "pages": "index.html (landing única), privacidad.html, terminos.html, paleta-de-marca.html (interna, no indexar)",
+  "secondary_keywords": [
+    "tapete de yoga mayoreo",
+    "tapetes de yoga para empresas",
+    "tapetes de yoga para eventos",
+    "tapete de yoga medidas",
+    "tapete de yoga antiderrapante mayoreo",
+    "tapete de yoga 8 mm mayoreo",
+    "proveedor de tapetes de yoga"
+  ],
+  "avoid_keywords": [
+    "tapete yoga / yoga mat / tapete de yoga (genérico: menudeo de Walmart, Miniso y Lululemon)",
+    "colchoneta / esterilla de yoga (0 clientes y casi 0 en Trends)",
+    "tapete de yoga de 180 cm, bloques de yoga (no se manejan)",
+    "el más barato / comparación con tiendas"
+  ],
+  "keywords_source": "Comité 2026-11-05: Search Console 90 d, autocompletado de Google MX, Google Trends, competencia y vocabulario de 140 chats de WhatsApp"
 }
