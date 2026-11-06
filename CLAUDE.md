@@ -1,6 +1,6 @@
 # tapetesdeyogamayoreo.com.mx — guía para el comité SEO
 
-Sitio estático en HTML de **YESH MARKET**: Tapetes de yoga de espuma EVA al mayoreo, directo de fábrica (grosores 4–12 mm, personalización con logo desde 150 piezas). Se despliega solo en Cloudflare Pages desde `main`. Los datos del negocio, palabras clave objetivo e IDs de medición están en `seo/site.json`; léelo antes de cualquier análisis.
+Sitio estático en HTML de **YESH MARKET**: Tapetes de yoga de espuma EVA al mayoreo, directo de fábrica (150 × 60 cm; grosores 4, 6, 8 y 10 mm; con logo desde 50 piezas). Se despliega solo en Cloudflare Pages desde `main`. Los datos del negocio, palabras clave objetivo e IDs de medición están en `seo/site.json`; léelo antes de cualquier análisis.
 
 ## Objetivo
 

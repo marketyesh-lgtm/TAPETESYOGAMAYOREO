@@ -33,13 +33,44 @@
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Av. Yucatán 54-16, Roma Nte.",
-    "addressLocality": "Cuauhtémoc, CDMX",
+    "addressLocality": "Cuauhtémoc",
     "postalCode": "06700",
-    "addressCountry": "MX"
+    "addressCountry": "MX",
+    "addressRegion": "CDMX"
   },
   "url": "https://www.tapetesdeyogamayoreo.com.mx/",
   "priceRange": "$$",
-  "areaServed": "MX"
+  "areaServed": "MX",
+  "@id": "https://www.tapetesdeyogamayoreo.com.mx/#negocio",
+  "alternateName": "YESH MARKET",
+  "description": "Fabricante de tapetes de yoga EVA de 150 × 60 cm al mayoreo y con logo, con factura y envío a todo México. Operado por YESH MARKET.",
+  "department": {
+    "@type": "Store",
+    "name": "Bodega Santa Fe · Tapetes de Yoga Mayoreo",
+    "telephone": "+525525897917",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Vasco de Quiroga 1684, 2da Amp. el Pirú",
+      "addressLocality": "Álvaro Obregón",
+      "addressRegion": "CDMX",
+      "postalCode": "01240",
+      "addressCountry": "MX"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "07:00",
+        "closes": "19:00"
+      }
+    ]
+  }
 }
 </script>
 <script type="application/ld+json">
@@ -47,21 +78,33 @@
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "Tapete de Yoga EVA al Mayoreo",
-  "description": "Tapete de yoga, mat y colchoneta de espuma EVA, antideslizante, fabricado en México. Venta al mayoreo para gimnasios, estudios de yoga, pilates y distribuidores.",
-  "brand": { "@type": "Brand", "name": "Tapetes de Yoga Mayoreo" },
+  "description": "Tapete de yoga de espuma EVA de 150 × 60 cm, con textura antiderrapante por una cara, incluye bolsa. Grosores de 4, 6, 8 y 10 mm. Venta al mayoreo y con tu logo para estudios, gimnasios, empresas, agencias y distribuidores.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Tapetes de Yoga Mayoreo"
+  },
   "offers": {
     "@type": "AggregateOffer",
     "priceCurrency": "MXN",
     "lowPrice": "129",
-    "highPrice": "279",
-    "offerCount": "5",
-    "availability": "https://schema.org/InStock"
+    "highPrice": "239",
+    "offerCount": "4",
+    "availability": "https://schema.org/InStock",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "129",
+      "priceCurrency": "MXN",
+      "valueAddedTaxIncluded": false
+    },
+    "seller": {
+      "@type": "Organization",
+      "name": "YESH MARKET",
+      "@id": "https://www.tapetesdeyogamayoreo.com.mx/#negocio"
+    }
   },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "1659"
-  }
+  "image": "https://www.tapetesdeyogamayoreo.com.mx/img/tapete-yoga-eva-colores-mayoreo-hero.jpg",
+  "size": "150 × 60 cm",
+  "material": "Espuma EVA"
 }
 </script>
 <script type="application/ld+json">
@@ -69,13 +112,134 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "¿Cuál es el precio mayoreo de los tapetes de yoga EVA?", "acceptedAnswer": { "@type": "Answer", "text": "Desde $129 MXN por pieza en presentación 4mm, directo de fábrica. El precio varía según grosor y personalización. Cotización en menos de 24 horas por WhatsApp." } },
-    { "@type": "Question", "name": "¿Cuál es la diferencia entre tapete, mat, colchoneta y esterilla de yoga?", "acceptedAnswer": { "@type": "Answer", "text": "Son el mismo producto con distintos nombres según la región de México: tapete y colchoneta son los más usados, mat es el término en inglés que también se busca mucho, y esterilla es más común en España pero también se usa aquí. Todos nuestros productos son de espuma EVA." } },
-    { "@type": "Question", "name": "¿Cuál es el pedido mínimo?", "acceptedAnswer": { "@type": "Answer", "text": "Para tapetes sin personalizar evaluamos cada caso, sin mínimo estricto. Para personalizados con logo el mínimo es 150 piezas." } },
-    { "@type": "Question", "name": "¿Hacen envíos a toda la República Mexicana?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, entregamos en toda la República. El tiempo depende del destino y volumen del pedido." } },
-    { "@type": "Question", "name": "¿Venden tapetes para crossfit, pilates o ejercicio funcional, o solo yoga?", "acceptedAnswer": { "@type": "Answer", "text": "Manejamos la misma línea de espuma EVA en distintos grosores para yoga, pilates, crossfit y ejercicio funcional. El grosor recomendado cambia según el uso — te asesoramos según tu disciplina." } },
-    { "@type": "Question", "name": "¿Cómo personalizo mi tapete con mi logo?", "acceptedAnswer": { "@type": "Answer", "text": "Nos envías tu logo en PNG o vector, te mandamos una propuesta visual en menos de 48 horas y, ya aprobada, la producción toma 15 días hábiles." } },
-    { "@type": "Question", "name": "¿Atienden a agencias de artículos promocionales?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, trabajamos con agencias que revenden a sus clientes corporativos, incluyendo pedidos con múltiples logos en un mismo lote." } }
+    {
+      "@type": "Question",
+      "name": "¿Cuál es el precio mayoreo de los tapetes de yoga EVA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Desde $129 + IVA por pieza en 4 mm, directo de fábrica. El de 6 mm cuesta $169, el de 8 mm $199 y el de 10 mm $239, más IVA. Con logo, el precio depende de la cantidad y te lo cotizamos por WhatsApp."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué medida tienen los tapetes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Miden 150 × 60 cm en todos los grosores (4, 6, 8 y 10 mm) y cada tapete incluye su bolsa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuál es el pedido mínimo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sin logo, desde 15 piezas en la CDMX y 30 piezas para el resto del país. Con logo, desde 50 piezas. Una tarima trae 400 piezas y es la cantidad con la que mejor conviene el precio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué grosores tienen en existencia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El de 4 mm siempre está en existencia. Del de 8 mm a veces hay; si no, se hace sobre pedido. El de 10 mm es sobre pedido y el de 6 mm solo para pedidos grandes. Te damos la fecha al cotizar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La textura antiderrapante va por los dos lados?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. El tapete tiene textura antiderrapante por una cara; la otra es lisa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Dan factura?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, todos los pedidos llevan factura (CFDI). Los precios publicados son más IVA."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hacen envíos a toda la República Mexicana?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. En la CDMX el envío cuesta desde $350, o puedes recoger tu pedido en nuestra bodega de Santa Fe. Al resto del país te cotizamos el envío con tu código postal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo recoger en bodega?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, en nuestra bodega de Santa Fe: Vasco de Quiroga 1684, 2da Amp. el Pirú, Álvaro Obregón, CDMX 01240, de lunes a viernes de 7:00 a 19:00. Avísanos por WhatsApp antes de ir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo pedir una muestra antes de comprar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Te mandamos el enlace para comprar una pieza y revisar el material, el grosor y el color antes de tu pedido."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo puedo pagar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Por transferencia o con tarjeta mediante un link de pago."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Mat, tapete, colchoneta o esterilla de yoga?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Son el mismo producto con distintos nombres: en México se le dice tapete de yoga; mat es el nombre en inglés, y colchoneta o esterilla también se usan. Todos nuestros tapetes son de espuma EVA."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué grosor conviene para pilates?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Para pilates mat recomendamos 6 u 8 mm; para clases de yoga en estudio, 4 o 6 mm; para piso duro o uso rudo, 10 mm."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo pongo mi logo en el tapete?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nos envías tu logo en PNG o vector y en menos de 48 horas te mandamos cómo se vería. Ya aprobado, lo imprimimos en serigrafía a 1 tinta; la producción toma aproximadamente 1 semana. El mínimo con logo es de 50 piezas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Venden a empresas para eventos o regalos corporativos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Hacemos tapetes con tu logo para team building, programas de bienestar, eventos y regalos. Te damos cotización formal, factura y los documentos para darnos de alta como proveedor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Atienden a agencias de artículos promocionales?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, trabajamos con agencias que revenden a sus clientes corporativos, incluyendo pedidos con varios logos en un mismo lote."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Venden tapetes para crossfit, pilates o ejercicio funcional, o solo yoga?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manejamos la misma línea de espuma EVA en distintos grosores para yoga, pilates, crossfit y ejercicio funcional. Te asesoramos según tu disciplina."
+      }
+    }
   ]
 }
 </script>
@@ -139,7 +303,8 @@
   .btn:hover{background:var(--rust-dark);}
   .btn-outline{background:transparent;color:var(--ink);border:1.5px solid var(--ink);box-shadow:none;}
   .btn-outline:hover{background:var(--ink);color:var(--white);}
-  .menu-toggle{display:none;background:none;border:none;font-size:24px;cursor:pointer;}
+  .menu-toggle{display:none;background:none;border:none;font-size:24px;cursor:pointer;min-width:44px;min-height:44px;}
+  .logo{white-space:nowrap;}
 
   /* Hero */
   .hero{padding:76px 0 60px;}
@@ -178,7 +343,7 @@
   .table-card{background:var(--white);border-radius:18px;box-shadow:0 16px 40px -24px rgba(43,36,32,.25);overflow-x:auto;}
   table.spec-table{width:100%;border-collapse:collapse;min-width:560px;}
   table.spec-table th{
-    background:var(--olive);color:#fff;text-align:left;padding:16px 20px;
+    background:#5F6B53;color:#fff;text-align:left;padding:16px 20px;
     font-size:12px;text-transform:uppercase;letter-spacing:.05em;font-weight:700;
   }
   table.spec-table td{padding:18px 20px;border-bottom:1px solid var(--line);font-size:15px;vertical-align:middle;}
@@ -187,7 +352,14 @@
   table.spec-table .price{font-weight:700;color:var(--rust);font-size:16px;}
   .table-cta a{font-weight:700;font-size:13px;color:var(--rust);}
   .table-cta a:hover{color:var(--rust-dark);}
-  .note{font-size:12.5px;color:#a89f90;margin-top:16px;}
+  .note{font-size:12.5px;color:#5a5148;margin-top:16px;}
+  .table-head{font-size:14px;color:var(--gray);margin:0 0 12px;font-weight:600;}
+  .gros-grid{display:grid;grid-template-columns:1.3fr .9fr;gap:36px;align-items:center;margin-bottom:30px;}
+  .ficha{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 28px;margin-top:18px;}
+  .ficha li{color:#e4dacb;font-size:15px;padding-left:22px;position:relative;}
+  .ficha li::before{content:'✓';position:absolute;left:0;color:var(--gold);font-weight:700;}
+  .ficha li strong{color:var(--cream);}
+  .hero-ficha{display:none;}
 
   /* Personalizado */
   .personalizado{background:var(--white);}
@@ -211,14 +383,14 @@
   .sector-row p{color:var(--gray);font-size:14px;}
 
   /* Reseñas */
-  .resenas{background:var(--olive);color:#fff;}
+  .resenas{background:#5F6B53;color:#fff;}
   .resenas h2{color:#fff;}
-  .resenas .lead{color:#e5ead8;}
+  .resenas .lead{color:#f1f4ea;}
   .review-box{
     background:rgba(255,255,255,.1);border-radius:18px;padding:32px;
     display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;
   }
-  .review-box p{color:#e5ead8;font-size:14.5px;max-width:540px;}
+  .review-box p{color:#f1f4ea;font-size:14.5px;max-width:540px;}
 
   /* Proceso */
   .proceso-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:36px;}
@@ -235,14 +407,10 @@
   }
   .faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease;}
   .faq-a p{padding-bottom:22px;color:var(--gray);font-size:15px;max-width:680px;}
-  .faq-item.open .faq-a{max-height:280px;}
+  .faq-item.open .faq-a{max-height:420px;}
   .faq-item.open .faq-q .chevron{transform:rotate(180deg);}
   .chevron{transition:transform .2s;color:var(--rust);font-weight:700;font-size:18px;}
 
-  /* Tag cloud */
-  .tagcloud{padding:44px 0;}
-  .tags{display:flex;flex-wrap:wrap;gap:10px;}
-  .tags span{background:var(--white);border:1px solid var(--line);border-radius:100px;padding:8px 16px;font-size:13px;color:var(--gray);}
 
   /* Formulario */
   .cotizar{background:var(--white);}
@@ -250,8 +418,8 @@
   .form-wrap .full{grid-column:1/-1;}
   label{display:block;font-size:13px;font-weight:700;margin-bottom:7px;color:var(--ink);}
   input,select,textarea{
-    width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:10px;
-    font-size:14.5px;font-family:inherit;background:var(--white);
+    width:100%;padding:13px 16px;border:1px solid #b8ad9c;border-radius:10px;
+    font-size:16px;font-family:inherit;background:var(--white);
   }
   input:focus,select:focus,textarea:focus{outline:none;border-color:var(--rust);}
   textarea{min-height:96px;}
@@ -305,7 +473,8 @@
     .form-wrap{grid-template-columns:1fr;padding:26px;}
     .anchor-band .container{flex-direction:column;align-items:flex-start;}
     .price-compare{text-align:left;}
-    nav ul{position:fixed;top:64px;left:0;right:0;background:var(--cream);flex-direction:column;padding:20px 28px;gap:16px;border-bottom:1px solid var(--line);display:none;}
+    header{backdrop-filter:none;background:var(--cream);}
+    nav ul{position:absolute;top:100%;left:0;right:0;background:var(--cream);flex-direction:column;padding:20px 28px;gap:16px;border-bottom:1px solid var(--line);display:none;}
     nav ul.open{display:flex;}
     .menu-toggle{display:block;}
     .nav-cta .btn-label{display:none;}
@@ -314,6 +483,37 @@
     .topbar .container{justify-content:center;text-align:center;}
     table.spec-table{font-size:13px;}
     table.spec-table td,table.spec-table th{padding:12px;}
+    .gros-grid{grid-template-columns:1fr;}
+  }
+  @media(max-width:600px){
+    section{padding:60px 0;}
+    .container{padding:0 18px;}
+    .topbar .container{padding:7px 18px;}
+    .topbar-left,.tb-long{display:none;}
+    .nav-wrap{padding:12px 18px;}
+    .logo{font-size:17px;}
+    .nav-cta{gap:8px;}
+    .ficha{grid-template-columns:1fr;}
+    .hero{padding:36px 0 44px;}
+    .hero-text{display:flex;flex-direction:column;}
+    .hero-text .eyebrow{order:1;}
+    .hero-text h1{order:2;margin-bottom:12px;}
+    .hero-ficha{display:block;order:3;font-weight:700;color:var(--rust-dark);font-size:16px;margin-bottom:18px;}
+    .hero-text .hero-cta{order:4;margin-bottom:22px;}
+    .hero-text .hero-cta .btn{width:100%;justify-content:center;}
+    .hero-text .lead{order:5;}
+    .hero-text .hero-seo{order:6;}
+    .hero-text .trust-row{order:7;margin-top:6px;}
+    .table-card{background:none;box-shadow:none;overflow:visible;}
+    table.spec-table{min-width:0;}
+    table.spec-table thead{display:none;}
+    table.spec-table tr{display:block;background:var(--white);border-radius:14px;margin-bottom:14px;padding:6px 16px 14px;box-shadow:0 10px 26px -20px rgba(43,36,32,.4);}
+    table.spec-table td{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14.5px;text-align:right;}
+    table.spec-table td::before{content:attr(data-label);font-weight:700;color:var(--gray);text-align:left;font-size:13px;}
+    table.spec-table td.table-cta{border-bottom:none;padding-top:12px;}
+    table.spec-table td.table-cta::before{content:none;}
+    .table-cta a{display:flex;align-items:center;justify-content:center;width:100%;min-height:44px;border-radius:30px;background:var(--rust);color:#fff;font-size:14px;}
+    .table-cta a:hover{color:#fff;background:var(--rust-dark);}
   }
 </style>
 </head>
@@ -327,14 +527,14 @@
       <span>📞 <a href="tel:+525525897917">55 2589 7917</a></span>
       <span>✉️ ventas@tapetesdeyogamayoreo.com.mx</span>
     </div>
-    <div>Fabricante directo · Entrega a toda la República Mexicana</div>
+    <div><span class="tb-long">Fabricante directo · </span>Envío CDMX desde $350 · Factura en todos los pedidos</div>
   </div>
 </div>
 
 <header>
   <div class="nav-wrap">
     <div class="logo">Tapetes de Yoga <span>Mayoreo</span></div>
-    <nav>
+    <nav aria-label="Principal">
       <ul id="navMenu">
         <li><a href="#grosores">Grosores</a></li>
         <li><a href="#colores">Colores</a></li>
@@ -346,30 +546,32 @@
       </ul>
     </nav>
     <div class="nav-cta">
-      <a class="btn" href="https://wa.me/525525897917?text=Hola%2C%20quiero%20cotizar%20tapetes%20de%20yoga%20EVA%20al%20mayoreo" target="_blank" rel="noopener">
+      <a class="btn" href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20tapetes%20de%20yoga%20al%20mayoreo" target="_blank" rel="noopener" data-cta="nav">
         <svg class="wa-icon" viewBox="0 0 32 32" fill="white" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.647.86 5.096 2.316 7.077L4.8 27.2l5.264-1.494A11.93 11.93 0 0 0 16.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3zm0 21.818c-1.99 0-3.845-.58-5.404-1.578l-.387-.242-3.207.91.933-3.127-.253-.402A9.79 9.79 0 0 1 6.18 15c0-5.415 4.406-9.818 9.821-9.818S25.82 9.585 25.82 15 21.416 24.818 16.001 24.818zm5.36-7.352c-.294-.148-1.74-.858-2.01-.956-.27-.099-.466-.148-.663.148-.196.295-.762.956-.934 1.153-.172.196-.344.221-.638.074-.294-.148-1.242-.457-2.366-1.459-.875-.78-1.466-1.744-1.638-2.038-.172-.295-.018-.454.13-.601.134-.133.294-.344.442-.516.147-.172.196-.295.294-.492.098-.196.049-.369-.025-.516-.074-.148-.663-1.6-.909-2.192-.24-.577-.484-.499-.663-.508l-.564-.01c-.196 0-.516.074-.786.369-.27.295-1.03 1.006-1.03 2.454s1.055 2.847 1.202 3.043c.147.196 2.077 3.172 5.032 4.448.703.303 1.251.484 1.678.62.705.224 1.347.192 1.854.117.566-.084 1.74-.712 1.985-1.4.245-.688.245-1.277.172-1.4-.074-.123-.27-.196-.564-.344z"/></svg>
         <span class="btn-label">Cotizar por WhatsApp</span>
       </a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">☰</button>
     </div>
   </div>
 </header>
 
+<main>
 <!-- HERO -->
 <section class="hero" id="inicio">
   <div class="container hero-grid">
-    <div>
+    <div class="hero-text">
       <span class="eyebrow">Fabricante directo · México</span>
       <h1>Tapetes de yoga al mayoreo, directo de fábrica</h1>
-      <p class="lead">Mats, colchonetas y esterillas de espuma EVA. Precio, mínimo y tiempo de entrega desde el primer mensaje — sin cotizaciones a ciegas.</p>
-      <p style="color:var(--gray);font-size:15px;max-width:560px;margin-bottom:26px;">Fabricamos tapetes de yoga EVA al mayoreo en México y surtimos a estudios de yoga y pilates, gimnasios, boxes de crossfit, distribuidores deportivos y agencias de artículos promocionales en toda la República. Ya sea que los busques como tapete, mat, colchoneta o esterilla de yoga, aquí es la misma pieza, hecha aquí, sin intermediarios.</p>
+      <p class="hero-ficha">Desde $129 + IVA · 4 mm · 150 × 60 cm · incluye bolsa</p>
+      <p class="lead">Tapetes de espuma EVA de 150 × 60 cm, sin logo o con tu logo. Precio, mínimo y tiempo de entrega desde el primer mensaje — sin cotizaciones a ciegas.</p>
+      <p class="hero-seo" style="color:var(--gray);font-size:15px;max-width:560px;margin-bottom:26px;">Fabricamos tapetes de yoga EVA al mayoreo en México y surtimos a estudios de yoga y pilates, gimnasios, empresas, distribuidores deportivos y agencias de artículos promocionales en toda la República, con factura en todos los pedidos.</p>
       <div class="hero-cta">
-        <a class="btn" href="https://wa.me/525525897917?text=Hola%2C%20quiero%20cotizar%20tapetes%20de%20yoga%20EVA%20al%20mayoreo" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+        <a class="btn" href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20tapetes%20de%20yoga%20al%20mayoreo%20para%20mi%20negocio" target="_blank" rel="noopener" data-cta="hero">Cotizar por WhatsApp</a>
         <a class="btn btn-outline" href="#cotizar">Ver formulario</a>
       </div>
       <div class="trust-row">
         <span class="trust-badge">Fabricación 100% México</span>
-        <span class="trust-badge">ISO 9001:2015</span>
+        <span class="trust-badge">Factura CFDI</span>
         <span class="trust-badge">Cotización en 24h</span>
         <span class="trust-badge">Envíos a toda la República</span>
         <span class="trust-badge">Disponible en más de 20 colores</span>
@@ -377,7 +579,7 @@
     </div>
     <div class="hero-visual">
       <img src="img/tapete-yoga-eva-colores-mayoreo-hero.jpg"
-           alt="Tapetes de yoga EVA al mayoreo en distintos colores, foto real de producto"
+           alt="Mujer en postura de perro boca abajo sobre un tapete de yoga EVA rosa"
            width="640" height="800" loading="eager"
            style="width:100%;height:100%;object-fit:cover;"
            onerror="this.style.display='none';document.getElementById('heroFallback').style.display='flex';">
@@ -394,7 +596,6 @@
             <circle cx="235" cy="235" r="16" fill="none" stroke="#faf6ef" stroke-width="4" opacity=".5"/>
           </g>
         </svg>
-        <span style="margin-top:10px;font-size:11.5px;color:#8a7f6c;background:#faf6efcc;padding:4px 10px;border-radius:100px;">Sube tu foto como: img/tapete-yoga-eva-colores-mayoreo-hero.jpg</span>
       </div>
     </div>
   </div>
@@ -404,13 +605,19 @@
 <section class="anchor-band">
   <div class="container">
     <div class="anchor-copy">
-      <span class="eyebrow" style="color:var(--gold)">Precio de fábrica, no de tienda</span>
-      <h2>Un tapete de yoga en tienda cuesta hasta 10 veces más</h2>
-      <p>Un tapete de yoga premium en México se vende entre $1,200 y $2,500 MXN al menudeo. Al mayoreo, directo de fábrica, el precio cambia por completo.</p>
+      <span class="eyebrow" style="color:var(--gold)">Lo que necesitas saber para cotizar</span>
+      <h2>Tapete de yoga EVA de 150 × 60 cm, directo de fábrica</h2>
+      <ul class="ficha">
+        <li><strong>Medida 150 × 60 cm</strong> en todos los grosores</li>
+        <li><strong>Incluye bolsa</strong> para guardarlo</li>
+        <li><strong>4 mm siempre en existencia</strong></li>
+        <li><strong>Factura</strong> en todos los pedidos</li>
+        <li><strong>Con tu logo</strong> desde 50 piezas</li>
+        <li><strong>CDMX:</strong> envío desde $350 o recoge en bodega</li>
+      </ul>
     </div>
     <div class="price-compare">
-      <div class="price-old">$1,200–$2,500 MXN menudeo</div>
-      <div class="price-new">desde $129<small>MXN / pieza mayoreo</small></div>
+      <div class="price-new">desde $129<small>MXN + IVA por pieza · 4 mm</small></div>
     </div>
   </div>
 </section>
@@ -420,63 +627,56 @@
   <div class="container">
     <span class="eyebrow">Catálogo mayoreo</span>
     <h2>Tapetes de yoga EVA por grosor</h2>
-    <div style="display:grid;grid-template-columns:1.3fr .9fr;gap:36px;align-items:center;margin-bottom:30px;">
+    <div class="gros-grid">
       <div class="intro-copy" style="margin-bottom:0;">
-        <p>Todos nuestros tapetes de yoga son de espuma EVA, antideslizante en ambas caras, fáciles de limpiar y sin absorción de olores. El grosor correcto depende del uso: 4mm y 6mm son el estándar para clases grupales de yoga y pilates en estudios; 8mm y 10mm dan más amortiguación para práctica intensiva o suelo duro; 12mm es la opción de máxima densidad para gimnasios y entrenamiento funcional de alto impacto.</p>
+        <p>Todos nuestros tapetes de yoga son de espuma EVA, de 150 × 60 cm, con textura antiderrapante por una cara, fáciles de limpiar y sin absorción de olores. Cada tapete incluye su bolsa. El grosor correcto depende del uso: 4 mm y 6 mm son el estándar para clases grupales de yoga y pilates en estudios; 8 mm y 10 mm dan más amortiguación para pilates, práctica intensiva o suelo duro.</p>
       </div>
       <div class="photo-slot" style="aspect-ratio:5/4;">
-        <img src="img/tapete-yoga-eva-textura-grosor.jpg" alt="Textura y grosor del tapete de yoga EVA, foto real de producto" width="500" height="400" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <img src="img/tapete-yoga-eva-textura-grosor.jpg" alt="Mujer en postura de triángulo sobre un tapete de yoga EVA amarillo" width="500" height="400" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
         <div class="photo-fallback">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M21 16l-5-5-4 4-3-3-6 6"/></svg>
-          <span>Sube: img/tapete-yoga-eva-textura-grosor.jpg</span>
         </div>
       </div>
     </div>
+    <p class="table-head">Medida: 150 × 60 cm en todos los grosores · precios por pieza + IVA · incluye bolsa</p>
     <div class="table-card">
       <table class="spec-table">
         <thead>
-          <tr><th>Grosor</th><th>Precio mayoreo</th><th>Uso recomendado</th><th>Pedido mín.</th><th></th></tr>
+          <tr><th>Grosor</th><th>Precio mayoreo</th><th>Uso recomendado</th><th>Disponibilidad</th><th><span class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Cotizar</span></th></tr>
         </thead>
         <tbody>
           <tr>
-            <td class="mm">4mm</td>
-            <td class="price">$129 MXN</td>
-            <td>Estándar para clases grupales de yoga y pilates</td>
-            <td>1 tarima</td>
-            <td class="table-cta"><a href="https://wa.me/525525897917?text=Hola%2C%20quiero%20cotizar%20Tapete%20de%20Yoga%20EVA%204mm%20al%20mayoreo" target="_blank" rel="noopener">Cotizar →</a></td>
+            <td class="mm" data-label="Grosor">4 mm</td>
+            <td class="price" data-label="Precio">$129 + IVA</td>
+            <td data-label="Uso">Estándar para clases grupales de yoga y pilates</td>
+            <td data-label="Disponibilidad">Siempre en existencia</td>
+            <td class="table-cta"><a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20tapetes%20de%20yoga%20de%204%20mm" target="_blank" rel="noopener" data-cta="grosor_4mm">Cotizar 4 mm →</a></td>
           </tr>
           <tr>
-            <td class="mm">6mm</td>
-            <td class="price">$169 MXN</td>
-            <td>Mayor amortiguación, práctica intensiva</td>
-            <td>1 tarima</td>
-            <td class="table-cta"><a href="https://wa.me/525525897917?text=Hola%2C%20quiero%20cotizar%20Tapete%20de%20Yoga%20EVA%206mm%20al%20mayoreo" target="_blank" rel="noopener">Cotizar →</a></td>
+            <td class="mm" data-label="Grosor">6 mm</td>
+            <td class="price" data-label="Precio">$169 + IVA</td>
+            <td data-label="Uso">Mayor amortiguación, práctica intensiva</td>
+            <td data-label="Disponibilidad">Solo pedidos grandes, sobre pedido</td>
+            <td class="table-cta"><a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20tapetes%20de%20yoga%20de%206%20mm" target="_blank" rel="noopener" data-cta="grosor_6mm">Cotizar 6 mm →</a></td>
           </tr>
           <tr>
-            <td class="mm">8mm</td>
-            <td class="price">$199 MXN</td>
-            <td>Pilates y suelo duro</td>
-            <td>1 tarima</td>
-            <td class="table-cta"><a href="https://wa.me/525525897917?text=Hola%2C%20quiero%20cotizar%20Tapete%20de%20Yoga%20EVA%208mm%20al%20mayoreo" target="_blank" rel="noopener">Cotizar →</a></td>
+            <td class="mm" data-label="Grosor">8 mm</td>
+            <td class="price" data-label="Precio">$199 + IVA</td>
+            <td data-label="Uso">Pilates y suelo duro</td>
+            <td data-label="Disponibilidad">A veces en existencia; si no, sobre pedido</td>
+            <td class="table-cta"><a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20tapetes%20de%20yoga%20de%208%20mm" target="_blank" rel="noopener" data-cta="grosor_8mm">Cotizar 8 mm →</a></td>
           </tr>
           <tr>
-            <td class="mm">10mm</td>
-            <td class="price">$239 MXN</td>
-            <td>Entrenamiento funcional, extra amortiguación</td>
-            <td>1 tarima</td>
-            <td class="table-cta"><a href="https://wa.me/525525897917?text=Hola%2C%20quiero%20cotizar%20Tapete%20de%20Yoga%20EVA%2010mm%20al%20mayoreo" target="_blank" rel="noopener">Cotizar →</a></td>
-          </tr>
-          <tr>
-            <td class="mm">12mm</td>
-            <td class="price">$279 MXN</td>
-            <td>Máxima densidad, uso rudo en gimnasios</td>
-            <td>1 tarima</td>
-            <td class="table-cta"><a href="https://wa.me/525525897917?text=Hola%2C%20quiero%20cotizar%20Tapete%20de%20Yoga%20EVA%2012mm%20al%20mayoreo" target="_blank" rel="noopener">Cotizar →</a></td>
+            <td class="mm" data-label="Grosor">10 mm</td>
+            <td class="price" data-label="Precio">$239 + IVA</td>
+            <td data-label="Uso">Entrenamiento funcional, extra amortiguación</td>
+            <td data-label="Disponibilidad">Sobre pedido</td>
+            <td class="table-cta"><a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20tapetes%20de%20yoga%20de%2010%20mm" target="_blank" rel="noopener" data-cta="grosor_10mm">Cotizar 10 mm →</a></td>
           </tr>
         </tbody>
       </table>
     </div>
-    <p class="note">* Precio de 4mm y personalizado confirmados. Precios de 6mm–12mm son estimados — ajústalos según tu costo real antes de publicar.</p>
+    <p class="note">* Precios por pieza, más IVA. Sin logo, desde 15 piezas en la CDMX y 30 piezas al resto del país; con logo, desde 50 piezas. Una tarima trae 400 piezas y es donde mejor conviene el precio. Si el grosor es sobre pedido, te damos la fecha al cotizar.</p>
   </div>
 </section>
 
@@ -520,25 +720,24 @@
     <div>
       <span class="eyebrow">Tu marca, tu tapete</span>
       <h2>Tapetes de yoga personalizados con tu logo</h2>
-      <p class="lead" style="font-size:16.5px;margin-bottom:16px;">Serigrafía de 1 tinta sobre tapete EVA de 4mm. Pedido mínimo 150 piezas, producción en 15 días hábiles. Desde $229 MXN por pieza.</p>
-      <p style="color:var(--gray);font-size:15px;margin-bottom:24px;">Ideal para gimnasios que regalan tapete de bienvenida a nuevos socios, programas de wellness corporativo, merchandising de estudios de yoga y pilates, y agencias de artículos promocionales que manejan varios clientes en un mismo pedido.</p>
+      <p class="lead" style="font-size:16.5px;margin-bottom:16px;">Impresión de tu logo en serigrafía a 1 tinta sobre tapete EVA. Desde 50 piezas; el precio depende de la cantidad y te lo cotizamos por WhatsApp. Te mandamos cómo se vería tu logo antes de producir.</p>
+      <p style="color:var(--gray);font-size:15px;margin-bottom:24px;">Ideal para eventos de empresa y team building, programas de bienestar, regalos corporativos, gimnasios que regalan tapete de bienvenida, estudios de yoga y pilates, y agencias de artículos promocionales que manejan varios clientes en un mismo pedido.</p>
       <div class="cta-row">
-        <a class="btn" href="https://wa.me/525525897917?text=Hola%2C%20quiero%20cotizar%20tapetes%20de%20yoga%20personalizados%20con%20mi%20logo%20para%20mi%20gimnasio" target="_blank" rel="noopener">Cotizar para mi gimnasio</a>
-        <a class="btn btn-outline" href="https://wa.me/525525897917?text=Hola%2C%20soy%20agencia%20de%20promocionales%20y%20quiero%20cotizar%20tapetes%20de%20yoga%20personalizados" target="_blank" rel="noopener">Soy agencia</a>
+        <a class="btn" href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20tapetes%20de%20yoga%20con%20el%20logo%20de%20mi%20gimnasio" target="_blank" rel="noopener" data-cta="logo_gimnasio">Cotizar para mi gimnasio</a>
+        <a class="btn btn-outline" href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20tapetes%20de%20yoga%20con%20logo%20para%20un%20cliente%20de%20mi%20agencia" target="_blank" rel="noopener" data-cta="agencia">Soy agencia</a>
       </div>
     </div>
     <div class="steps">
       <div class="step"><div class="num-serif">01</div><div><h3>Envías tu logo</h3><p style="color:var(--gray);font-size:14px;">PNG o vector, por WhatsApp o correo.</p></div></div>
-      <div class="step"><div class="num-serif">02</div><div><h3>Aprobación de arte</h3><p style="color:var(--gray);font-size:14px;">Propuesta visual en menos de 48 horas.</p></div></div>
-      <div class="step"><div class="num-serif">03</div><div><h3>Producción y entrega</h3><p style="color:var(--gray);font-size:14px;">15 días hábiles, entrega nacional.</p></div></div>
+      <div class="step"><div class="num-serif">02</div><div><h3>Aprobación de arte</h3><p style="color:var(--gray);font-size:14px;">Te mandamos cómo se vería tu logo en menos de 48 horas.</p></div></div>
+      <div class="step"><div class="num-serif">03</div><div><h3>Producción y entrega</h3><p style="color:var(--gray);font-size:14px;">En aproximadamente 1 semana, con envío a todo México.</p></div></div>
     </div>
   </div>
   <div class="container">
     <div class="photo-slot" style="aspect-ratio:21/7;margin-top:16px;">
-      <img src="img/tapete-yoga-eva-personalizado-logo-mayoreo.jpg" alt="Tapete de yoga EVA personalizado con logo en serigrafía, foto real de producto" width="1050" height="350" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <img src="img/tapete-yoga-eva-personalizado-logo-mayoreo.jpg" alt="Ejemplo de tapete de yoga con un logo impreso a una tinta" width="1050" height="350" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
       <div class="photo-fallback">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M21 16l-5-5-4 4-3-3-6 6"/></svg>
-        <span>Sube: img/tapete-yoga-eva-personalizado-logo-mayoreo.jpg</span>
       </div>
     </div>
   </div>
@@ -555,36 +754,33 @@
     <div class="disc-grid">
       <div class="disc">
         <div class="photo-slot" style="aspect-ratio:4/3;margin-bottom:16px;">
-          <img src="img/tapete-pilates-eva-mayoreo.jpg" alt="Tapete de pilates EVA al mayoreo, foto real de producto" width="360" height="270" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <img src="img/tapete-pilates-eva-mayoreo.jpg" alt="Mujer meditando sobre un tapete de yoga EVA turquesa" width="360" height="270" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
           <div class="photo-fallback">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M21 16l-5-5-4 4-3-3-6 6"/></svg>
-            <span>Sube: img/tapete-pilates-eva-mayoreo.jpg</span>
           </div>
         </div>
-        <h3>Pilates</h3>
-        <p>Tapetes de 6mm–8mm, con mayor densidad para ejercicios en suelo y control de la columna. Estándar en estudios de pilates mat.</p>
+        <h3>Tapetes de pilates al mayoreo (6–8 mm)</h3>
+        <p>Tapetes de 6 a 8 mm, con mayor densidad para ejercicios en suelo y control de la columna. Estándar en estudios de pilates mat.</p>
       </div>
       <div class="disc">
         <div class="photo-slot" style="aspect-ratio:4/3;margin-bottom:16px;">
-          <img src="img/tapete-crossfit-eva-mayoreo.jpg" alt="Tapete de crossfit EVA al mayoreo, foto real de producto" width="360" height="270" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <img src="img/tapete-crossfit-eva-mayoreo.jpg" alt="Tapete de yoga EVA fucsia enrollado sobre piso de madera" width="360" height="270" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
           <div class="photo-fallback">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M21 16l-5-5-4 4-3-3-6 6"/></svg>
-            <span>Sube: img/tapete-crossfit-eva-mayoreo.jpg</span>
           </div>
         </div>
         <h3>Crossfit / uso rudo</h3>
-        <p>Grosor 10mm–12mm para boxes de crossfit y entrenamiento funcional, resistente al uso intensivo diario.</p>
+        <p>Grosor de 8 a 10 mm para boxes de crossfit y entrenamiento funcional, resistente al uso intensivo diario.</p>
       </div>
       <div class="disc">
         <div class="photo-slot" style="aspect-ratio:4/3;margin-bottom:16px;">
-          <img src="img/tapete-ejercicio-eva-mayoreo.jpg" alt="Tapete de ejercicio EVA al mayoreo, foto real de producto" width="360" height="270" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <img src="img/tapete-ejercicio-eva-mayoreo.jpg" alt="Mujer en postura de triángulo sobre un tapete EVA verde" width="360" height="270" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
           <div class="photo-fallback">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M21 16l-5-5-4 4-3-3-6 6"/></svg>
-            <span>Sube: img/tapete-ejercicio-eva-mayoreo.jpg</span>
           </div>
         </div>
         <h3>Ejercicio general</h3>
-        <p>Tapetes multiusos para gimnasios y clases de acondicionamiento — 4mm–6mm cubre la mayoría de los casos.</p>
+        <p>Tapetes multiusos para gimnasios y clases de acondicionamiento — 4 a 6 mm cubre la mayoría de los casos.</p>
       </div>
     </div>
   </div>
@@ -605,8 +801,13 @@
         <p>Compran tapetes de distintos grosores para estiramiento, clases grupales y área de piso libre.</p>
       </div>
       <div class="sector-row">
+        <h3>Empresas y eventos</h3>
+        <p>Tapetes para team building, programas de bienestar, eventos y regalos con tu logo. Te damos factura, cotización formal y los documentos para el alta de proveedor.</p>
+        <p style="margin-top:10px;"><a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20tapetes%20de%20yoga%20con%20logo%20para%20un%20evento%20de%20mi%20empresa" target="_blank" rel="noopener" data-cta="empresas" style="color:var(--rust);font-weight:700;font-size:14px;">Cotizar para mi empresa →</a></p>
+      </div>
+      <div class="sector-row">
         <h3>Boxes de crossfit</h3>
-        <p>Buscan tapetes de mayor densidad (10mm–12mm) resistentes al uso rudo diario.</p>
+        <p>Buscan tapetes de mayor densidad (8 a 10 mm) resistentes al uso rudo diario.</p>
       </div>
       <div class="sector-row">
         <h3>Agencias de artículos promocionales</h3>
@@ -624,11 +825,11 @@
 <section class="resenas" id="resenas">
   <div class="container">
     <span class="eyebrow" style="color:#fff">Prueba social</span>
-    <h2>4.8/5 con más de 1,600 opiniones verificadas</h2>
+    <h2>4.8 de 5 en nuestra tienda de Mercado Libre</h2>
     <p class="lead">Nuestros tapetes de yoga EVA ya se venden y se califican en MercadoLibre — puedes revisar las reseñas reales de compradores antes de cotizar al mayoreo con nosotros.</p>
     <div class="review-box">
       <p>Calificación 4.8 de 5 estrellas con más de 1,600 opiniones de compradores verificados. Comentarios destacan buena relación calidad-precio, colores intensos, superficie antiderrapante y tamaño adecuado para yoga, pilates y ejercicio en piso.</p>
-      <a class="btn" style="background:#fff;color:var(--olive);" href="https://www.mercadolibre.com.mx/tapete-yoga-pilates-fitness-ejercicio-4-mm-yesh-market-color-morado/p/MLM47890088" target="_blank" rel="noopener">Ver reseñas en MercadoLibre</a>
+      <a class="btn" style="background:#fff;color:#4a5440;" href="https://www.mercadolibre.com.mx/tapete-yoga-pilates-fitness-ejercicio-4-mm-yesh-market-color-morado/p/MLM47890088" target="_blank" rel="noopener">Ver reseñas en MercadoLibre</a>
     </div>
   </div>
 </section>
@@ -641,8 +842,8 @@
     <div class="proceso-grid">
       <div class="proceso-item"><span class="num-serif">01</span><h3 style="font-size:16px;">Cotización</h3><p>Nos escribes por WhatsApp o llenas el formulario. Respondemos en menos de 24 horas.</p></div>
       <div class="proceso-item"><span class="num-serif">02</span><h3 style="font-size:16px;">Confirmación</h3><p>Precio, cantidad y tiempos claros antes de pagar.</p></div>
-      <div class="proceso-item"><span class="num-serif">03</span><h3 style="font-size:16px;">Producción</h3><p>Inmediata en stock estándar; 15 días hábiles con logo.</p></div>
-      <div class="proceso-item"><span class="num-serif">04</span><h3 style="font-size:16px;">Entrega</h3><p>A toda la República Mexicana.</p></div>
+      <div class="proceso-item"><span class="num-serif">03</span><h3 style="font-size:16px;">Producción</h3><p>El 4 mm sale de existencia; los demás grosores, sobre pedido. Con logo, en aproximadamente 1 semana.</p></div>
+      <div class="proceso-item"><span class="num-serif">04</span><h3 style="font-size:16px;">Entrega</h3><p>CDMX desde $350 o recoges en bodega. Resto del país: cotizamos el envío con tu código postal.</p></div>
     </div>
   </div>
 </section>
@@ -655,55 +856,68 @@
     <div id="faqList">
       <div class="faq-item">
         <button class="faq-q">¿Cuál es el precio mayoreo de los tapetes de yoga EVA?<span class="chevron">⌄</span></button>
-        <div class="faq-a"><p>Desde $129 MXN por pieza en presentación 4mm, directo de fábrica. El precio varía según grosor y personalización. Cotización en menos de 24 horas por WhatsApp.</p></div>
+        <div class="faq-a"><p>Desde $129 + IVA por pieza en 4 mm, directo de fábrica. El de 6 mm cuesta $169, el de 8 mm $199 y el de 10 mm $239, más IVA. Con logo, el precio depende de la cantidad y te lo cotizamos por WhatsApp.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">¿Cuál es la diferencia entre tapete, mat, colchoneta y esterilla de yoga?<span class="chevron">⌄</span></button>
-        <div class="faq-a"><p>Son el mismo producto con distintos nombres según la región de México: tapete y colchoneta son los más usados, mat es el término en inglés muy buscado también, y esterilla se usa más en España pero también aquí. Todos nuestros productos son de espuma EVA.</p></div>
+        <button class="faq-q">¿Qué medida tienen los tapetes?<span class="chevron">⌄</span></button>
+        <div class="faq-a"><p>Miden 150 × 60 cm en todos los grosores (4, 6, 8 y 10 mm) y cada tapete incluye su bolsa.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">¿Cuál es el pedido mínimo?<span class="chevron">⌄</span></button>
-        <div class="faq-a"><p>Para tapetes sin personalizar evaluamos cada caso, sin mínimo estricto. Para personalizados con logo el mínimo es 150 piezas.</p></div>
+        <div class="faq-a"><p>Sin logo, desde 15 piezas en la CDMX y 30 piezas para el resto del país. Con logo, desde 50 piezas. Una tarima trae 400 piezas y es la cantidad con la que mejor conviene el precio.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Qué grosores tienen en existencia?<span class="chevron">⌄</span></button>
+        <div class="faq-a"><p>El de 4 mm siempre está en existencia. Del de 8 mm a veces hay; si no, se hace sobre pedido. El de 10 mm es sobre pedido y el de 6 mm solo para pedidos grandes. Te damos la fecha al cotizar.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿La textura antiderrapante va por los dos lados?<span class="chevron">⌄</span></button>
+        <div class="faq-a"><p>No. El tapete tiene textura antiderrapante por una cara; la otra es lisa.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Dan factura?<span class="chevron">⌄</span></button>
+        <div class="faq-a"><p>Sí, todos los pedidos llevan factura (CFDI). Los precios publicados son más IVA.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">¿Hacen envíos a toda la República Mexicana?<span class="chevron">⌄</span></button>
-        <div class="faq-a"><p>Sí, entregamos en toda la República. El tiempo depende del destino y volumen del pedido.</p></div>
+        <div class="faq-a"><p>Sí. En la CDMX el envío cuesta desde $350, o puedes recoger tu pedido en nuestra bodega de Santa Fe. Al resto del país te cotizamos el envío con tu código postal.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Puedo recoger en bodega?<span class="chevron">⌄</span></button>
+        <div class="faq-a"><p>Sí, en nuestra bodega de Santa Fe: Vasco de Quiroga 1684, 2da Amp. el Pirú, Álvaro Obregón, CDMX 01240, de lunes a viernes de 7:00 a 19:00. Avísanos por WhatsApp antes de ir.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Puedo pedir una muestra antes de comprar?<span class="chevron">⌄</span></button>
+        <div class="faq-a"><p>Sí. Te mandamos el enlace para comprar una pieza y revisar el material, el grosor y el color antes de tu pedido.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Cómo puedo pagar?<span class="chevron">⌄</span></button>
+        <div class="faq-a"><p>Por transferencia o con tarjeta mediante un link de pago.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Mat, tapete, colchoneta o esterilla de yoga?<span class="chevron">⌄</span></button>
+        <div class="faq-a"><p>Son el mismo producto con distintos nombres: en México se le dice tapete de yoga; mat es el nombre en inglés, y colchoneta o esterilla también se usan. Todos nuestros tapetes son de espuma EVA.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Qué grosor conviene para pilates?<span class="chevron">⌄</span></button>
+        <div class="faq-a"><p>Para pilates mat recomendamos 6 u 8 mm; para clases de yoga en estudio, 4 o 6 mm; para piso duro o uso rudo, 10 mm.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Cómo pongo mi logo en el tapete?<span class="chevron">⌄</span></button>
+        <div class="faq-a"><p>Nos envías tu logo en PNG o vector y en menos de 48 horas te mandamos cómo se vería. Ya aprobado, lo imprimimos en serigrafía a 1 tinta; la producción toma aproximadamente 1 semana. El mínimo con logo es de 50 piezas.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Venden a empresas para eventos o regalos corporativos?<span class="chevron">⌄</span></button>
+        <div class="faq-a"><p>Sí. Hacemos tapetes con tu logo para team building, programas de bienestar, eventos y regalos. Te damos cotización formal, factura y los documentos para darnos de alta como proveedor.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Atienden a agencias de artículos promocionales?<span class="chevron">⌄</span></button>
+        <div class="faq-a"><p>Sí, trabajamos con agencias que revenden a sus clientes corporativos, incluyendo pedidos con varios logos en un mismo lote.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">¿Venden tapetes para crossfit, pilates o ejercicio funcional, o solo yoga?<span class="chevron">⌄</span></button>
         <div class="faq-a"><p>Manejamos la misma línea de espuma EVA en distintos grosores para yoga, pilates, crossfit y ejercicio funcional. Te asesoramos según tu disciplina.</p></div>
       </div>
-      <div class="faq-item">
-        <button class="faq-q">¿Cómo personalizo mi tapete con mi logo?<span class="chevron">⌄</span></button>
-        <div class="faq-a"><p>Nos envías tu logo en PNG o vector, te mandamos una propuesta visual en menos de 48 horas y, ya aprobada, la producción toma 15 días hábiles.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">¿Atienden a agencias de artículos promocionales?<span class="chevron">⌄</span></button>
-        <div class="faq-a"><p>Sí, trabajamos con agencias que revenden a sus clientes corporativos, incluyendo pedidos con múltiples logos en un mismo lote.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TAG CLOUD -->
-<section class="tagcloud">
-  <div class="container">
-    <span class="eyebrow">Búsquedas relacionadas</span>
-    <div class="tags">
-      <span>tapete de yoga mayoreo</span>
-      <span>mat de yoga mayoreo</span>
-      <span>colchoneta de yoga mayoreo</span>
-      <span>esterilla de yoga mayoreo</span>
-      <span>tapete de yoga EVA</span>
-      <span>tapete de yoga personalizado con logo</span>
-      <span>tapete de pilates mayoreo</span>
-      <span>tapete de crossfit mayoreo</span>
-      <span>tapete de ejercicio mayoreo</span>
-      <span>proveedor de tapetes de yoga México</span>
-      <span>fabricante de tapetes de yoga</span>
-      <span>tapete de yoga precio fábrica</span>
-      <span>tapete antiderrapante yoga</span>
-      <span>artículo promocional fitness</span>
     </div>
   </div>
 </section>
@@ -713,47 +927,53 @@
   <div class="container">
     <span class="eyebrow">Cotización</span>
     <h2>Cotiza tu pedido de tapetes de yoga</h2>
-    <p class="lead">Respuesta en menos de 24 horas hábiles con precio, disponibilidad y condiciones de pedido.</p>
+    <p class="lead">Te contestamos por WhatsApp con precio + IVA, existencia, envío a tu código postal y fecha de entrega.</p>
     <form class="form-wrap" id="quoteForm">
       <div>
         <label for="empresa">Empresa / Negocio *</label>
         <input type="text" id="empresa" name="empresa" autocomplete="organization" required>
       </div>
       <div>
-        <label for="contacto">Nombre de contacto *</label>
+        <label for="contacto">Tu nombre *</label>
         <input type="text" id="contacto" name="contacto" autocomplete="name" required>
       </div>
       <div>
-        <label for="correo">Correo electrónico *</label>
-        <input type="email" id="correo" name="correo" autocomplete="email" inputmode="email" required>
+        <label for="cantidad">¿Cuántas piezas? *</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" inputmode="numeric" placeholder="Ej. 50" required>
       </div>
       <div>
-        <label for="telefono">Teléfono / WhatsApp *</label>
-        <input type="tel" id="telefono" name="telefono" autocomplete="tel" inputmode="tel" required>
-      </div>
-      <div>
-        <label for="cantidad">Cantidad estimada *</label>
-        <select id="cantidad" name="cantidad" required>
-          <option value="">Selecciona un rango</option>
-          <option>50 – 199 piezas</option>
-          <option>200 – 499 piezas</option>
-          <option>500 – 999 piezas</option>
-          <option>1,000+ piezas</option>
+        <label for="grosor">Grosor</label>
+        <select id="grosor" name="grosor">
+          <option>4 mm</option>
+          <option>6 mm</option>
+          <option>8 mm</option>
+          <option>10 mm</option>
+          <option>No sé, asesórenme</option>
         </select>
       </div>
       <div>
-        <label for="frecuencia">Frecuencia de compra *</label>
-        <select id="frecuencia" name="frecuencia" required>
-          <option value="">Selecciona frecuencia</option>
-          <option>Compra única</option>
-          <option>Mensual</option>
-          <option>Quincenal</option>
-          <option>Semanal</option>
+        <label for="logo">¿Con o sin logo? *</label>
+        <select id="logo" name="logo" required>
+          <option value="">Selecciona</option>
+          <option>Sin logo</option>
+          <option>Con mi logo</option>
         </select>
+      </div>
+      <div>
+        <label for="color">Color(es)</label>
+        <input type="text" id="color" name="color" placeholder="Ej. morado y negro">
+      </div>
+      <div>
+        <label for="ciudad">Ciudad o código postal *</label>
+        <input type="text" id="ciudad" name="ciudad" autocomplete="postal-code" required>
+      </div>
+      <div>
+        <label for="fecha">¿Para cuándo los necesitas?</label>
+        <input type="text" id="fecha" name="fecha" placeholder="Ej. 20 de noviembre">
       </div>
       <div class="full">
         <label for="detalles">Detalles adicionales</label>
-        <textarea id="detalles" name="detalles" placeholder="Grosor, personalización con logo, fecha estimada, etc."></textarea>
+        <textarea id="detalles" name="detalles" placeholder="Uso, evento, si necesitas factura o alta de proveedor, etc."></textarea>
       </div>
       <div class="full" style="display:flex;align-items:flex-start;gap:8px;">
         <input type="checkbox" id="privacidad" required style="width:auto;margin-top:4px;">
@@ -766,16 +986,16 @@
     </form>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="container footer-grid">
     <div>
       <div class="logo">Tapetes de Yoga <span style="color:var(--gold)">Mayoreo</span></div>
-      <p class="footer-about">Fabricante de tapetes de yoga, mats, colchonetas y esterillas de espuma EVA al mayoreo en México. Atendemos estudios de yoga y pilates, gimnasios, boxes de crossfit, distribuidores deportivos y agencias de artículos promocionales en toda la República Mexicana. Más de 25 años de experiencia del grupo fabricante, cobertura en los 32 estados del país.</p>
+      <p class="footer-about">Fabricante de tapetes de yoga de espuma EVA al mayoreo y con tu logo en México. Atendemos estudios de yoga y pilates, gimnasios, empresas, distribuidores deportivos y agencias de artículos promocionales en toda la República Mexicana. Más de 25 años de experiencia del grupo fabricante, cobertura en los 32 estados del país. Operado por YESH MARKET.</p>
       <div class="cert-badges">
-        <span>ISO 9001:2015</span>
         <span>Hecho en México</span>
-        <span>NOM-161-SEMARNAT</span>
+        <span>Factura CFDI</span>
       </div>
     </div>
     <div>
@@ -783,6 +1003,7 @@
       <p><a href="tel:+525525897917">55 2589 7917</a></p>
       <p><a href="mailto:ventas@tapetesdeyogamayoreo.com.mx">ventas@tapetesdeyogamayoreo.com.mx</a></p>
       <p>Av. Yucatán 54-16, Roma Nte.,<br>Cuauhtémoc, CDMX 06700</p>
+      <p>Bodega (recoger pedidos): Vasco de Quiroga 1684, 2da Amp. el Pirú,<br>Álvaro Obregón, CDMX 01240 · L–V 7:00 a 19:00</p>
     </div>
     <div>
       <h4>Enlaces</h4>
@@ -798,17 +1019,20 @@
   </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/525525897917?text=Hola%2C%20quiero%20cotizar%20tapetes%20de%20yoga%20EVA%20al%20mayoreo" target="_blank" rel="noopener" aria-label="Cotizar por WhatsApp">
+<a class="wa-float" href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20tapetes%20de%20yoga" target="_blank" rel="noopener" aria-label="Cotizar por WhatsApp" data-cta="flotante">
   <svg viewBox="0 0 32 32" fill="white" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.647.86 5.096 2.316 7.077L4.8 27.2l5.264-1.494A11.93 11.93 0 0 0 16.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3zm0 21.818c-1.99 0-3.845-.58-5.404-1.578l-.387-.242-3.207.91.933-3.127-.253-.402A9.79 9.79 0 0 1 6.18 15c0-5.415 4.406-9.818 9.821-9.818S25.82 9.585 25.82 15 21.416 24.818 16.001 24.818zm5.36-7.352c-.294-.148-1.74-.858-2.01-.956-.27-.099-.466-.148-.663.148-.196.295-.762.956-.934 1.153-.172.196-.344.221-.638.074-.294-.148-1.242-.457-2.366-1.459-.875-.78-1.466-1.744-1.638-2.038-.172-.295-.018-.454.13-.601.134-.133.294-.344.442-.516.147-.172.196-.295.294-.492.098-.196.049-.369-.025-.516-.074-.148-.663-1.6-.909-2.192-.24-.577-.484-.499-.663-.508l-.564-.01c-.196 0-.516.074-.786.369-.27.295-1.03 1.006-1.03 2.454s1.055 2.847 1.202 3.043c.147.196 2.077 3.172 5.032 4.448.703.303 1.251.484 1.678.62.705.224 1.347.192 1.854.117.566-.084 1.74-.712 1.985-1.4.245-.688.245-1.277.172-1.4-.074-.123-.27-.196-.564-.344z"/></svg>
 </a>
 
 <script>
-  document.getElementById('menuToggle').addEventListener('click', function(){
-    document.getElementById('navMenu').classList.toggle('open');
+  var menuBtn = document.getElementById('menuToggle'), menu = document.getElementById('navMenu');
+  menuBtn.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
   document.querySelectorAll('#navMenu a').forEach(function(link){
     link.addEventListener('click', function(){
-      document.getElementById('navMenu').classList.remove('open');
+      menu.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
     });
   });
   document.querySelectorAll('.faq-item').forEach(function(item){
@@ -821,22 +1045,20 @@
   });
   document.getElementById('quoteForm').addEventListener('submit', function(e){
     e.preventDefault();
-    var empresa = document.getElementById('empresa').value;
-    var contacto = document.getElementById('contacto').value;
-    var correo = document.getElementById('correo').value;
-    var telefono = document.getElementById('telefono').value;
-    var cantidad = document.getElementById('cantidad').value;
-    var frecuencia = document.getElementById('frecuencia').value;
-    var detalles = document.getElementById('detalles').value;
-    var msg = "Hola, quiero cotizar tapetes de yoga EVA al mayoreo.%0A" +
-      "Empresa: " + empresa + "%0A" +
-      "Contacto: " + contacto + "%0A" +
-      "Correo: " + correo + "%0A" +
-      "Teléfono: " + telefono + "%0A" +
-      "Cantidad estimada: " + cantidad + "%0A" +
-      "Frecuencia: " + frecuencia + "%0A" +
-      "Detalles: " + detalles;
-    window.open("https://wa.me/525525897917?text=" + msg, "_blank");
+    function v(id){ return document.getElementById(id).value.trim(); }
+    var msg = "Hola, me interesa comprar tapetes de yoga.\n" +
+      "Empresa: " + v('empresa') + "\n" +
+      "Nombre: " + v('contacto') + "\n" +
+      "Piezas: " + v('cantidad') + "\n" +
+      "Grosor: " + v('grosor') + "\n" +
+      "Logo: " + v('logo') + "\n" +
+      "Color(es): " + v('color') + "\n" +
+      "Ciudad o CP: " + v('ciudad') + "\n" +
+      "Para cuándo: " + v('fecha') + "\n" +
+      "Detalles: " + v('detalles');
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({event: 'cta_click', cta_id: 'formulario'});
+    window.open("https://wa.me/525525897917?text=" + encodeURIComponent(msg), "_blank");
     document.getElementById('formConfirm').style.display = 'block';
   });
 </script>
